@@ -94,13 +94,7 @@ A complete email with subject, greeting, body, and closing in selected tone.
 
 ---
 
-## 📜 License
-
-MIT License
-
----
-
 ## 👨‍💻 Author
 
-Your Name
-GitHub: [https://github.com/your-username](https://github.com/abhiruppanji-ux)
+Abhirup Panji Github - https://github.com/abhiruppanji-ux
+Shaurya Vaid Github - https://github.com/ShauryaVaid
