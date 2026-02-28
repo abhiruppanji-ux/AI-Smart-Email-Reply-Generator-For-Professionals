@@ -1,4 +1,4 @@
-📧 AI Smart Email Reply Generator
+##📧 AI Smart Email Reply Generator
 
 An intelligent email assistant built with Streamlit, Ollama, LangChain, and MongoDB that converts rough notes into professional, well-structured emails with customizable tone and memory-based personalization.
 
