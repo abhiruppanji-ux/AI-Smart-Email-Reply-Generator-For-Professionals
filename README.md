@@ -1,115 +1,106 @@
-##📧 AI Smart Email Reply Generator
+## 📧 AI Smart Email Reply Generator
 
-An intelligent email assistant built with Streamlit, Ollama, LangChain, and MongoDB that converts rough notes into professional, well-structured emails with customizable tone and memory-based personalization.
+An AI-powered web app that converts rough notes into **professional, structured emails** with customizable tone and memory-based personalization.
 
-🚀 Features
+Built using **Streamlit, Ollama (LLaMA 3.1), LangChain, FAISS, and MongoDB**.
 
-✨ Convert rough text into polished emails
+---
 
-🎯 Select tone: Professional, Polite, Assertive, Friendly
+## 🚀 Features
 
-🧠 Memory system using MongoDB (stores previous inputs)
+* ✨ Generate professional emails from rough input
+* 🎯 Multiple tones: Professional, Polite, Assertive, Friendly
+* 🧠 Memory storage using MongoDB
+* 🔍 Context-aware generation using FAISS similarity search
+* 🤖 Runs locally with Ollama (no paid API required)
+* ⚡ Simple and interactive Streamlit UI
 
-🔍 Context-aware email generation using vector search (FAISS)
+---
 
-🤖 Powered by LLaMA 3.1 (Ollama)
+## 🛠️ Tech Stack
 
-⚡ Fast and interactive UI with Streamlit
+* **Frontend:** Streamlit
+* **LLM:** LLaMA 3.1 via Ollama
+* **Embeddings:** nomic-embed-text
+* **Vector Store:** FAISS
+* **Database:** MongoDB
+* **Framework:** LangChain
 
-🛠️ Tech Stack
+---
 
-Frontend/UI: Streamlit
+## ⚙️ Setup Instructions
 
-LLM: Ollama (LLaMA 3.1)
+### 1. Clone Repository
 
-Embeddings: nomic-embed-text
-
-Vector DB: FAISS
-
-Database: MongoDB
-
-Frameworks: LangChain
-
-📂 Project Structure
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Dependencies
-└── README.md           # Project documentation
-⚙️ Installation & Setup
-1️⃣ Clone the repository
+```
 git clone https://github.com/your-username/ai-email-generator.git
 cd ai-email-generator
-2️⃣ Install dependencies
+```
+
+### 2. Install Dependencies
+
+```
 pip install -r requirements.txt
-3️⃣ Start MongoDB
+```
 
-Make sure MongoDB is running locally:
+### 3. Run MongoDB
 
+```
 mongod
-4️⃣ Install & Run Ollama
+```
 
-Download Ollama: https://ollama.com/
+### 4. Setup Ollama
 
-Pull required models:
-
+```
 ollama pull llama3.1
 ollama pull nomic-embed-text
-
-Start Ollama server:
-
 ollama serve
-▶️ Run the App
+```
+
+### 5. Run Application
+
+```
 streamlit run app.py
-💡 How It Works
+```
 
-User enters rough email notes
+---
 
-Optional: Save input as memory in MongoDB
+## 💡 Usage
 
-System retrieves past memory using FAISS similarity search
+1. Enter rough email notes
+2. Select desired tone
+3. (Optional) Save input as memory
+4. Click **Generate Smart Reply**
+5. Get a polished, professional email
 
-LLM generates a structured email using:
+---
 
-Context
+## 📌 Example
 
-Selected tone
+**Input:**
+`tell boss ur sick, wont come today, will finish report by monday`
 
-Prompt engineering
+**Output:**
+A complete email with subject, greeting, body, and closing in selected tone.
 
-🧪 Example Input
-tell boss ur sick, wont come today, will finish report by monday
-✅ Output
+---
 
-Professional email
+## 🔮 Future Enhancements
 
-Proper subject line
+* User authentication
+* Email sending integration (Gmail/SMTP)
+* Cloud deployment
+* Improved long-term memory
 
-Formal tone
+---
 
-Structured message
+## 📜 License
 
-🔮 Future Improvements
+MIT License
 
-🔐 User authentication system
+---
 
-☁️ Cloud deployment (AWS/GCP)
-
-📩 Email sending integration (SMTP/Gmail API)
-
-🧠 Better long-term memory handling
-
-🎨 UI enhancements
-
-🤝 Contributing
-
-Contributions are welcome!
-Feel free to fork this repo and submit a pull request.
-
-📜 License
-
-This project is licensed under the MIT License.
-
-👨‍💻 Author
+## 👨‍💻 Author
 
 Your Name
-
-GitHub: https://github.com/your-username
+GitHub: [https://github.com/your-username](https://github.com/your-username)
